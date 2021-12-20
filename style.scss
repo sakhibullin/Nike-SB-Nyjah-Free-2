@@ -61,6 +61,7 @@ nav{
     background: #FFC700;
     width: 94px;
     height: 90px;
+    transition: .4s;
     .imgBurger{
       margin: 37px auto ;
       background-image: url("images/Burger-Menu.png");
@@ -68,10 +69,15 @@ nav{
       height: 16px;
     }
   }
+  .burgerMenu:hover{
+    background: #edb900;
+  }
+
   .ico{
     display: flex;
     margin-left: auto;
     .circ{
+      transition: .4s;
       width: 39px;
       height: 39px;
       background: #FFFFFF;
@@ -105,6 +111,11 @@ nav{
         transform: translateY(-50%);
       }
     }
+
+    .circ:hover{
+      transform: translateY(-2px);
+    }
+
     .circ:last-child{
       margin-right: 49px;
     }
@@ -166,6 +177,7 @@ nav{
       box-shadow: 0px 40px 60px rgba(95, 42, 243, 0.2);
       display: flex;
       margin-top: 45px;
+
       a{
         width: auto;
         height: auto;
@@ -183,9 +195,16 @@ nav{
           margin-left: 20px;
           width: 5px;
           height: 12px;
+          transition: all .4s ;
         }
       }
     }
+
+    .btnBuy:hover .arrowBtn{
+      transform: translateX(3px);
+    }
+    
+
   }
 
   .leftSide *{
@@ -402,6 +421,12 @@ nav{
         padding: 8px 20px;
         border: 1px solid rgba(62, 62, 62, 0.3);
         margin-right: 22px;
+        transition: .3s;
+      }
+
+      .sizeBtn:hover{
+        border: 1px solid rgba(62, 62, 62, 1);
+        color: rgba(0, 0, 0, 0.8);
       }
     }
     .size *{
@@ -493,7 +518,7 @@ nav{
   h2{
     font-family: Gilroy-Bold;
     text-transform: uppercase;
-    background: linear-gradient(90deg,#0047FF 0% , #EC00E2 20%);
+    background: linear-gradient(90deg,#0047FF 0% , #EC00E2 67%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 20px;
@@ -787,6 +812,11 @@ nav{
       text-transform: capitalize;
       color: #FFFFFF;
       opacity: 0.8;
+      transition: .2s;
+    }
+
+    a:hover{
+      opacity: 1;
     }
 
     .social{
